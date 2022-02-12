@@ -15,4 +15,5 @@ def lcs(s1, s2):
 
 # s1 = 'hieroglyphology'
 # s2 = 'michelangelo'
+# lcs => len(hello) or len(higlo) or len(ieglo)
 # lcs(s1, s2)
