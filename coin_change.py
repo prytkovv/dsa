@@ -1,3 +1,6 @@
+# yt: https://www.youtube.com/watch?v=H9bfqozjoqs
+# wiki: https://en.wikipedia.org/wiki/Change-making_problem
+
 def change_coins(coins, amount):
     dp = [float('inf') for _ in range(amount + 1)]
     dp[0] = 0

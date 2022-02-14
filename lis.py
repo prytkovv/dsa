@@ -7,7 +7,7 @@ def lis(s):
     for i in reversed(range(len(s) - 1)):
         for j in range(i + 1, len(s)):
             if s[j] > s[i]:
-                dp[i] = max(dp[i], 1 + dp[j])
+                dp[i] = max(dp[i], dp[j] + 1)
     return max(dp)
 
 

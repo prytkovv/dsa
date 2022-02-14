@@ -7,7 +7,7 @@ def lcs(s1, s2):
     for i in reversed(range(len(s1))):
         for j in reversed(range(len(s2))):
             if s1[i] == s2[j]:
-                dp[i][j] = 1 + dp[i + 1][j + 1]
+                dp[i][j] = dp[i + 1][j + 1] + 1
             else:
                 dp[i][j] = max(dp[i + 1][j], dp[i][j + 1])
     return dp[0][0]
