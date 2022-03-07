@@ -1,5 +1,6 @@
 # wiki: https://en.wikipedia.org/wiki/Maximum_subarray_problem
 # yt: https://www.youtube.com/watch?v=5WZl3MMT0Eg
+# Everytime we get negative prefix we remove it
 
 def max_subarray(values):
     max_sum = values[0]
